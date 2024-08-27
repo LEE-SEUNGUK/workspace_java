@@ -1,0 +1,7 @@
+package ch11_java_api;
+
+public class ApiMath {
+	public static void main(String[] args) {
+		
+	}
+}

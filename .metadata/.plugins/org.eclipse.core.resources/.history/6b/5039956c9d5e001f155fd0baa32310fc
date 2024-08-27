@@ -1,0 +1,29 @@
+package ch12_exception;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * class Name 	: ExMethod
+ * Author 	  	: Smoothie
+ * Created Date : 2024. 8. 20.
+ * Version		: 1.0
+ * Purpose		:
+ * Description  :
+ */
+public class ExMethod {
+	public static long dateMillsec(String date) throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
+		Date temp = sdf.parse(date);
+		
+		return temp.getTime();
+	}
+	
+	public static long dateMillsec2(String date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
+		Date temp = sdf.parse(date);
+		
+		return temp.getTime();
+	}
+}

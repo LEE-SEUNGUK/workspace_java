@@ -1,0 +1,16 @@
+package ch12_exception;
+
+public class ExceptionMain {
+	public static void main(String[] args) {
+		System.out.println("메인 시작!");
+		int[] arr = {1,2,3};
+		
+		try {
+			System.out.println(arr[3]);	// 오류가 발생 가능한 로직을 예외처리
+		} catch (Exception e) {
+			System.out.println();
+			//e.printStackTrace(); // 예외 발생 코드에 대해 추적한 내용을 콘솔에 출력
+		}
+		System.out.println("메인 종료");
+	}
+}

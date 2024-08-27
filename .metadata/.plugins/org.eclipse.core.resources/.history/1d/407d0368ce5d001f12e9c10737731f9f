@@ -1,0 +1,9 @@
+package ch11_java_api;
+
+public class ApiJson {
+
+	public static void main(String[] args) {
+		String allUrl = "http://api.upbit.com/v1/market/all";
+	}
+
+}
