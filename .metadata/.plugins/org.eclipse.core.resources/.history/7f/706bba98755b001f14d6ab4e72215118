@@ -1,6 +1,0 @@
-package ch10_extends_interface.starcraft;
-
-public class HighTemplar extends StarUnit{
-	private int shield;
-	private int mp;
-}

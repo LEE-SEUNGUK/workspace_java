@@ -1,6 +1,0 @@
-package ch10_extends_interface.family;
-
-// child는 parent를 상속받음
-public class Child extends Parent{
-
-}
