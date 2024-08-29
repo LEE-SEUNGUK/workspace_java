@@ -1,8 +1,0 @@
-package ch13_thread;
-
-public class ThreadMain {
-	public static void main(String[] args) {
-		ExThread ex1 = new ExThread(20, "job1");
-		ExThread ex2 = new ExThread(100, "job2");
-	}
-}
