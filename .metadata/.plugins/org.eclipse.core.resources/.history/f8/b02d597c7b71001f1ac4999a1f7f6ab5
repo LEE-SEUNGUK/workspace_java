@@ -1,0 +1,11 @@
+package ch16_network.chat;
+
+import java.util.Scanner;
+
+public class ChatClient {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("채팅방에 입장하려면 닉네임을 입력하세요:");
+		String nm = scan.nextLine();
+	}
+}

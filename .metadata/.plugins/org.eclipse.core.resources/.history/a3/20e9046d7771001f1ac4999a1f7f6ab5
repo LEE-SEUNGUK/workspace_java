@@ -1,0 +1,9 @@
+package ch16_network.chat;
+
+public class ReceiveThread {
+	private Socket soc;
+	
+	public Readable(Socket soc) {
+		this.soc = soc;
+	}
+}

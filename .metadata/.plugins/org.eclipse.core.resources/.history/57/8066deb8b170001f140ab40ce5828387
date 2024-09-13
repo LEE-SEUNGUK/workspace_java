@@ -1,0 +1,29 @@
+package ch14_jdbc;
+
+import java.util.Scanner;
+
+public class JdbcMain {
+	private static final String URL = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+	private static final String DB_ID = "java";
+	private static final String DB_PW = "oracle";
+	
+	public static void main(String[] args) {
+		while(true) {
+			Scanner scan = new Scanner(System.in);
+			System.out.println("학사 정보 시스템입니다.");
+			System.out.println("1. 조회 | 2. 수정(q:종료)");
+			String msg = scan.nextLine();
+			if(msg.equals("q")) {
+				System.out.println("삭사 정보 시스템 종료");
+				break;
+			}
+			int sel = Integer.parseInt(msg);
+			if(sel == 1) {
+				System.out.println("조회할 학번을 입력하세요: ");
+				// 학생의 정보 출력
+			} else if(sel == 2) {
+				System.out.println("수정할 학번을 입력하세요: ");
+			}
+		}
+	}
+}

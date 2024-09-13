@@ -1,0 +1,13 @@
+package ch16_network.chat;
+
+import java.net.Socket;
+
+public class SendThread extends Thread {
+	private Socket soc;
+	private String name;
+	
+	public SendThread(Socket soc, String name) {
+		this.soc = soc;
+		this.name = name;
+	}
+}

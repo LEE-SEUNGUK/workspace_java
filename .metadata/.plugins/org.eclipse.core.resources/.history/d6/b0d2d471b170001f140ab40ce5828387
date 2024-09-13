@@ -1,0 +1,13 @@
+package ch14_jdbc;
+
+public class JdbcMain {
+	private static final String URL = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+	private static final DB_ID = "java";
+	private static final DB_PW = "oracle";
+	
+	public static void main(String[] args) {
+		while(true) {
+			
+		}
+	}
+}

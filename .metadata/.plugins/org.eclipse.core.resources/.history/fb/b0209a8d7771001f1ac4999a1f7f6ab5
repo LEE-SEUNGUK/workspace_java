@@ -1,0 +1,16 @@
+package ch16_network.chat;
+
+import java.net.Socket;
+
+public class ReceiveThread extend Thread{
+	private Socket soc;
+	
+	public ReceiveThread(Socket soc) {
+		this.soc = soc;
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+}

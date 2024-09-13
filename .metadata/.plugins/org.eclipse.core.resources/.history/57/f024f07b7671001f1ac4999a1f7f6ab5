@@ -1,0 +1,19 @@
+package ch16_network.chat;
+
+import java.net.Socket;
+
+public class SendThread extends Thread {
+	private Socket soc;
+	private String name;
+	
+	public SendThread(Socket soc, String name) {
+		this.soc = soc;
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		// 키보드 입력을 소켓에 데이터로 전송
+	}
+	
+}

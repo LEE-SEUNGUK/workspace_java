@@ -1,0 +1,22 @@
+package ch15_inout;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+/**
+ * class Name 	: Delay
+ * Author 	  	: Smoothie
+ * Created Date : 2024. 9. 13.
+ * Version		: 1.0
+ * Purpose		: 텍스트 파일 생성!
+ * Description  :
+ */
+
+public class Delay {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 날짜 포맷
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+		String current = sdf.format(new Date())
+	}
+}

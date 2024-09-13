@@ -1,0 +1,52 @@
+package ch15_inout;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+/**
+ * class Name 	: Delay
+ * Author 	  	: Smoothie
+ * Created Date : 2024. 9. 13.
+ * Version		: 1.0
+ * Purpose		: 텍스트 파일 생성!
+ * Description  :
+ */
+
+public class Delay {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 날짜 포맷
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+		String currentDate = sdf.format(new Date());
+		String filePath = "delay.txt"; // 현재 위치(워크스페이스 기준) 
+		File file = new File(filePath);
+		try {
+			// 파일에 데이터를 바이트 단위로 쓰기위한 클래스
+			FileOutputStream fos = new FileOutputStream(file, true);
+			fos.write((currentDate + " 오늘의 지각자...\n").getBytes());
+			while(true) {
+				System.out.println("오늘의 지각자를 기록하세요. exit 를 입력하면 종료됨");
+				String msg = sc.nextLine();
+				if("exit".equalsIgnoreCase(msg)) {
+					System.out.println("종료합니다");
+					break;
+				}
+				fos.write((msg + "\n").getBytes());
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			sc.close();
+		}
+		
+	}
+}

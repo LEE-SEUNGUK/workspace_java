@@ -1,0 +1,10 @@
+package ch14_jdbc;
+
+import ch14_jdbc.jdbc.ConnectionPool;
+
+public class TestMain {
+	public static void main(String[] args) {
+		
+		ConnectionPool cp = ConnectionPool.getInstance()
+	}
+}

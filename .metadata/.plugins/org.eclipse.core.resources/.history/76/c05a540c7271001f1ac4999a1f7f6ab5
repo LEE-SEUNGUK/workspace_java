@@ -1,0 +1,24 @@
+package ch16_network;
+
+import java.io.IOException;
+import java.net.Socket;
+
+/**
+ * class Name : FileClient Author : Smoothie Created Date : 2024. 9. 13. Version
+ * : 1.0 Purpose : 소켓통신 Description : 파일전송
+ */
+
+public class FileClient {
+	public static void main(String[] args) {
+		String host = "localhost";
+		int port = 5000;
+
+		try {
+			Socket socket = new Socket(host, port);
+			System.out.println("서버에 연결됨");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
